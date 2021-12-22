@@ -6,7 +6,7 @@ import (
 
 func main(){
 
-	// Primmitive data
+	// Part 1 Primmitive data
 	var i int
 	i = 42
 	fmt.Println(i)
@@ -27,8 +27,7 @@ func main(){
 	r, im := real(c), imag(c)
 	fmt.Println(r, im)
 
-	// Pointers
-
+	// Part 2 - pointers
 	/*
 		setting up pointers by preceding with a *
 		deferennced pointers by preceding the var with an *
@@ -43,4 +42,20 @@ func main(){
 
 	fmt.Println(*santaName)
 	// output is a pointer
+
+	// Part 3 - address of operator - pointer
+	favoriteCity := "Helsinki"
+	fmt.Println(favoriteCity)
+
+	ptr := &favoriteCity
+	fmt.Println(ptr, *ptr)
+
+	favoriteCity = "Oslo"
+	fmt.Println(ptr, *ptr)
+
+	// same memory spot
+	// 0xc000042260 Helsinki
+	// 0xc000042260 Oslo
+
+
 }
