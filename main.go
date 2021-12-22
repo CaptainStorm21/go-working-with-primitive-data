@@ -14,7 +14,11 @@ const (
 	num13 = 3 << iota
 	num14 = 10 << iota
 	num15
+)
 
+const (
+	num16 = iota
+	num17
 )
 
 
@@ -100,4 +104,10 @@ fmt.Println(city1, num10, num11, num12, num13)
 // accessing iota (320, 640)
 fmt.Println(num14, num15)
 
+// accessing iota (320, 640, 0)
+// iota will reset with a new constant block
+fmt.Println(num14, num15, num16)
+
+// accessing iota (0, 1)
+fmt.Println(num16, num17)
 }
