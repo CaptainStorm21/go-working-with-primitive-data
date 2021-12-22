@@ -4,6 +4,17 @@ import (
 	"fmt"
 )
 
+const language = "ENGLISH"
+
+const (
+	city1 = "Los Angeles"
+	num10 = iota
+	num11 = iota
+	num12 = iota + 6
+	num13 = 3 << iota
+)
+
+
 func main(){
 
 	// Part 1 Primmitive data
@@ -77,6 +88,11 @@ func main(){
 
 
 
+// accessing outside variable
+fmt.Println(language)
+
+// accessing iota (los angeles, 1, 2)
+fmt.Println(city1, num10, num11, num12, num13)
 
 
 
