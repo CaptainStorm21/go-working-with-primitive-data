@@ -12,6 +12,9 @@ const (
 	num11 = iota
 	num12 = iota + 6
 	num13 = 3 << iota
+	num14 = 10 << iota
+	num15
+
 )
 
 
@@ -94,6 +97,7 @@ fmt.Println(language)
 // accessing iota (los angeles, 1, 2)
 fmt.Println(city1, num10, num11, num12, num13)
 
-
+// accessing iota (320, 640)
+fmt.Println(num14, num15)
 
 }
