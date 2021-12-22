@@ -57,5 +57,27 @@ func main(){
 	// 0xc000042260 Helsinki
 	// 0xc000042260 Oslo
 
+	// part 4 - constants
+	const pie = 3.123234
+	fmt.Println(pie)
+
+	const num1 = 9
+	fmt.Println(num1 + 4)
+
+	// bunch of code
+	fmt.Println(num1 + 3.2)
+
+
+	// differnt data type
+	const num2 int = 34
+	fmt.Println ( num2 + 10)
+
+	const num3 int = 100
+	fmt.Println ( float32(num3) + 3.3)
+
+
+
+
+
 
 }
